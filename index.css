@@ -186,7 +186,7 @@ text-shadow: none;
 
 /* vidriera about */
 .separator{
-    margin-top: 2%;
+    margin-top: 15vh;
     position: inherit;
     display: block;
     right: 0em;
@@ -197,9 +197,7 @@ text-shadow: none;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
-    text-align: center;
-    
-    
+    text-align: center;    
 }
 
 .about{
@@ -238,17 +236,16 @@ text-shadow: none;
 }
 
 .profileFoto{
-    width: 356px;
-    height: 350px;
+    width: 30vh;
+    height: 30vh;
     display: inline-block;
     padding: 8px;
     background: linear-gradient(130deg, #74b9ff, #e66767);
-    margin: auto;
     border-radius: 50%;
     background-size: 200% 200%;
     animation: animated-gradient 2s linear infinite;
-    margin-top: -0%;
-    margin-bottom: 10%;
+    margin-top: 5vh;
+    margin-bottom: 25vh;
 }
 
 @keyframes animated-gradient{
@@ -461,11 +458,7 @@ margin-top: -80px;
 height: 40px;
 }
 
-.card:hover {
-transform: scale(0.9, 0.9);
-box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-    -5px -5px 30px 15px rgba(0,0,0,0.22);
-}
+
 
 .title-white {
 color: white;
@@ -477,16 +470,195 @@ color: black;
 
 @media all and (max-width: 500px) {
 .card-list {
-    /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
 }
 }
+/* videoModal A*/
+.modal-contenido{
+    background-color:rgb(67, 70, 70, 0.5);
+    width:200vh;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+    align-items: center;
+    }
+.modal{
+    position:fixed;
+    top:-25vh;
+    right:0;
+    bottom:0;
+    left:-20vh;
+    opacity:0;
+    pointer-events:none;
+    }
+    #miModal:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    .openCard1{
+        text-decoration: none;
+        color: white;
+    }
+
+    .videoA{
+        width: 100vh;
+        position: inherit;
+    }
+
+    .infoA{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 2vh;
+        width: 50vh;
+        height: 56vh;
+        float: right;
+        background-color: rgb(26, 26, 26, 0.9);
+        margin-right: 10vh;
+        border-style: groove;
+        border-radius: 5%;
+        
+    }
+
+.closeButton{
+    text-decoration: none;
+    color: black;
+    width: 5vh;
+    padding: 1vh;
+    background-color: rgb(161, 160, 159, 0.5);
+    border-radius: 50%;
+    float: left;
+    margin-left: 17vh;
+}
+.closeButton:hover{
+    background-color: tomato;
+}
+    
 
 
+/* videoModal b*/
+.modal-contenido1{
+    background-color:rgb(67, 70, 70, 0.5);
+    width:200vh;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+    align-items: center;
+    }
+.modal1{
+    position:fixed;
+    top:-25vh;
+    right:0;
+    bottom:0;
+    left:-20vh;
+    opacity:0;
+    pointer-events:none;
+    }
+    #miModal1:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    .openCard2{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+    .videob{
+        width: 100vh;
+        position: inherit;
+    }
+    .infoB{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 2vh;
+        width: 50vh;
+        height: 56vh;
+        float: right;
+        background-color: rgb(26, 26, 26, 0.9);
+        margin-right: 10vh;
+        border-style: groove;
+        border-radius: 5%;
+        
+    }
+
+.closeButton1{
+    text-decoration: none;
+    color: black;
+    width: 5vh;
+    padding: 1vh;
+    background-color: rgb(161, 160, 159, 0.5);
+    border-radius: 50%;
+    float: left;
+    margin-left: 17vh;
+}
+.closeButton1:hover{
+    background-color: tomato;
+}
 
 
+/* videoModal C*/
+.modal-contenido2{
+    background-color:rgb(67, 70, 70, 0.5);
+    width:200vh;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+    align-items: center;
+    }
+.modal2{
+    position:fixed;
+    top:-25vh;
+    right:0;
+    bottom:0;
+    left:-20vh;
+    opacity:0;
+    pointer-events:none;
+    }
+    #miModal2:target{
+        opacity:1;
+        pointer-events:auto;
+    }
+    .openCard3{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+    .infoC{
+        color: white;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 2vh;
+        width: 50vh;
+        height: 56vh;
+        float: right;
+        background-color: rgb(26, 26, 26, 0.9);
+        margin-right: 10vh;
+        border-style: groove;
+        border-radius: 5%;
+        
+    }
+
+    .videoc{
+        width: 100vh;
+        position: inherit;
+    }
+    
+
+.closeButton2{
+    text-decoration: none;
+    color: black;
+    width: 5vh;
+    padding: 1vh;
+    background-color: rgb(161, 160, 159, 0.5);
+    border-radius: 50%;
+    float: left;
+    margin-left: 17vh;
+}
+.closeButton2:hover{
+    background-color: tomato;
+}
 
 
+.Links{
+    text-decoration: none;
+    color: white;
+}
 
 
 
